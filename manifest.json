@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Manager Extension",
+  "version": "1.0",
+  "description": "A simple Chrome extension to manage bookmarks.",
+  "permissions": ["bookmarks", "storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
